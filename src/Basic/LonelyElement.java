@@ -1,13 +1,11 @@
 package Basic;
-
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 public class LonelyElement {
     public static void main(String[] args) {
-        int[] arr={1,1,2,2,2,3,4,4};
+        int[] arr={1,1,2,2,3,4,4};
+        int result=0;
         Map<Integer,Integer> mp= new HashMap<>();
         for(int i = 0; i<=arr.length-1 ; i++){
             if(mp.containsKey(arr[i])){
@@ -21,5 +19,15 @@ public class LonelyElement {
 	            if (entry.getValue()==1)
                     System.out.println(entry.getKey());
 	        }
+
+        // best approach using XOR operator
+//        for (int i:arr){
+//            result=result^i;
+//        }
+//        System.out.println(result);
     }
+
+
+
+
 }
