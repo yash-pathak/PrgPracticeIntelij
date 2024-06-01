@@ -6,6 +6,9 @@ public class ArrayRotation {
         int[] arr ={1,2,3,4,5,6};
         int n =3;
         arrayRotation(n, arr);
+        for (int i:arr){
+            System.out.println(i);
+        }
 
     }
 
@@ -13,9 +16,6 @@ public class ArrayRotation {
 
         for(int i = 0; i<n; i++){
             rotateLeft(arr);
-        }
-        for(int i : arr){
-            System.out.print(i+" ");
         }
     }
 
