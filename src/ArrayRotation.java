@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+import Exception.CustomException;
 public class ArrayRotation {
 
     public static void main(String[] args){
@@ -13,7 +14,8 @@ public class ArrayRotation {
     }
 
     private static void arrayRotation(int n, int[] arr) {
-
+        if (arr==null)
+            throw new CustomException("empty array");
         for(int i = 0; i<n; i++){
             rotateLeft(arr);
         }
